@@ -1,3 +1,9 @@
+-- This script creates entries for files loaded by mpv in 
+-- ~/.local/share/RecentDocuments folders.
+-- The script spawns subprocess to get Absolute Path and 
+-- mime type of file. Since Lua does not provide any support
+-- by default
+
 mputils = require 'mp.utils'
 
 function getAbsPath(path)
